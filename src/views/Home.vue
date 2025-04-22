@@ -1,30 +1,24 @@
-<template>
+<script setup>
+import {ref,reactive} from 'vue'
+import ModuleTitle from './moduleTitle.vue'
+import ModuleFirst from './moduleFirst.vue'
+import ModuleSecond from './moduleSecond.vue'
 
-    <dv-full-screen-container>
-        <div class="module-box">
-            <div>
-                <dv-border-box3 style="width: 400px; height: 300px;">
-                    <div dv-bg>
-                        dv-border-box3
-                    </div>
-                </dv-border-box3>
-            </div>
 
-            <div>
-                <dv-border-box9 style="width: 400px; height: 300px;">
-                    <div dv-bg>
-                        dv-border-box-9
-                    </div>
-                </dv-border-box9>
-            </div>
-        </div>
-    </dv-full-screen-container>
-</template>
-
-<script>
-export default {
-
-}
 </script>
 
-<style></style>
+<template>
+  <dv-full-screen-container>
+    <!-- 标题 -->
+    <ModuleTitle />
+    <!-- 第一行 -->
+    <ModuleFirst />
+    <!-- 第二行 -->
+    <ModuleSecond />
+    
+</dv-full-screen-container>
+</template>
+
+<style scoped>
+
+</style>
